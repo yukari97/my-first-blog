@@ -7,11 +7,13 @@
         <h1><a href="/">Blog Django Girls</a></h1>
       </div>
 
+    {% for post in posts %}
       <div>
-        <p>publicado: 22.05.2020, 18:00</p>
-        <h2><a href="">Meu primeiro post</a></h2>
-        <p> Fico muito feliz por ter vindo visitar meu blog!Espero que gostem!</p>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
       </div>
+    {% endfor %}
 
       <div>
         <p>publicado: 22.05.2020, 18:01</p>
