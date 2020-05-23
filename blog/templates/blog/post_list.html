@@ -1,41 +1,22 @@
-{% load static %}
-
 <html>
-
     <head>
       <title>Blog Django Girls</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     </head>
-
     <body>
       <div>
         <h1><a href="/">Blog Django Girls</a></h1>
       </div>
 
-{% for post in posts %}
       <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-      </div>
-
-      <div>
-        <p>publicado: 23.05.2020, 12:30</p>
+        <p>publicado:23.05.2020, 14:30</p>
         <h2><a href="">Meu primeiro post</a></h2>
-        <p> Fico muito feliz por terem vindo visitar meu blog!Espero que gostem!</p>
+        <p>Fico muito feliz por terem vindo visitar meu blog!Espero que gostem!</p>
       </div>
 
       <div>
-        <p>publicado: 23.05.2020, 12:31</p>
+        <p>publicado: 23.05.2020, 14:35</p>
         <h2><a href="">Meu segundo post</a></h2>
-        <p>Logo logo, postarei mais conteúdo.</p>
+        <p>Logo, logo postarei mais conteúdo.</p>
       </div>
-
-{% endfor %}
     </body>
-
 </html>
